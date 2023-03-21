@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 /**
  * main - function to print
  *
@@ -11,8 +11,8 @@ int main(void)
 
 	for (c = 0; c < sizeof(putChar); c++)
 	{
-		putchar(putChar[c]);
+		_putchar(putChar[c]);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
