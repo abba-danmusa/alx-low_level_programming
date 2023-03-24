@@ -2,33 +2,34 @@
 #include <stdio.h>
 
 /**
- *main - Prints a Fizz Buzz program
- * 
- *Return: Always 0 (success)
- */
+  * main - Prints a Fizz Buzz program
+  *
+  * Return: Always 0 (Success)
+  */
 int main(void)
 {
-	int i;
+	int x;
 
-	for (i = 1; i <= 100; i++)
+	for (x = 1; x <= 100; x++)
 	{
-		if ((i % 3 == 0) && (i % 5 == 0))
+		if ((x % 3 == 0) && (x % 5 == 0))
 		{
 			printf("FizzBuzz");
 		}
-		else if (i % 5 == 0)
-		{
-			printf("Buzz");
-		}
-		else if (i % 3 == 0)
+		else if (x % 3 == 0)
 		{
 			printf("Fizz");
 		}
-		else {
-			printf("%d", i);
+		else if (x % 5 == 0)
+		{
+			printf("Buzz");
 		}
-		
-		if (i != 100)
+		else
+		{
+			printf("%d", x);
+		}
+
+		if (x != 100)
 		{
 			printf(" ");
 		}
@@ -38,4 +39,3 @@ int main(void)
 
 	return (0);
 }
-
